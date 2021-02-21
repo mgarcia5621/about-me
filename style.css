@@ -47,6 +47,7 @@ article {
     display: grid;
     grid-column: span 2 / 5;
     padding: 20px;
+    margin-top: auto;
     margin-bottom: auto;
     justify-content: space-around
 }
