@@ -23,6 +23,7 @@ body {
     grid-template-rows: auto 1fr auto;
     padding: 0;
     margin: 0;
+    grid-gap: 10px;
 }
 
 header {
@@ -47,16 +48,19 @@ article {
     display: grid;
     grid-column: span 2 / 5;
     padding: 20px;
-    margin-top: auto;
     margin-bottom: auto;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
-/* aside {
-    margin-top: auto;
-    margin-bottom: auto;
-} */
+.todo-list {
+    padding-left: 0;
+}
 
+aside,
+article {
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
 
 #image-container {
     display: flex;
@@ -115,6 +119,11 @@ ul {
         display: flex;
         flex-wrap: wrap;
         height: 100vh;
+    }
+
+    #image-container {
+        display: flex;
+        justify-content: center;
     }
 
     footer {
