@@ -32,26 +32,34 @@ header {
 }
 
 aside {
+    display: grid;
+    justify-content: center;
     grid-column: span 2;
     grid-row: 2;
     font-size: 20px;
     align-items: center;
     padding: 20px;
-}
-
-article {
-    grid-column: span 2 / 5;
-    padding: 20px;
-}
-
-aside,
-article {
     margin-top: auto;
     margin-bottom: auto;
 }
 
+article {
+    display: grid;
+    grid-column: span 2 / 5;
+    padding: 20px;
+    margin-bottom: auto;
+    justify-content: space-around
+}
+
+/* aside {
+    margin-top: auto;
+    margin-bottom: auto;
+} */
+
+
 #image-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #image-container img {
@@ -137,6 +145,11 @@ ul {
     text-align: center;
   }
   
+  .modal-image-container img.clickable-image {
+      width: 300px !important;
+      height: 400px !important;
+  }
+
   /* Caption of Modal Image */
   #caption {
     margin: auto;
