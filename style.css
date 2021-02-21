@@ -1,0 +1,187 @@
+html {
+    height: 100%;
+}
+
+body {
+     font-family:'Roboto', sans-serif;
+    font-size: larger;   
+    background-image: url(./images/Mateomayo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: bottom;
+    color: #fff;   
+}
+
+.border-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr minmax(150px, 25%) 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    grid-column: span 5;
+    padding-top: 20px;
+    text-align: center;
+}
+
+aside {
+    grid-column: span 2;
+    grid-row: 2;
+    font-size: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+article {
+    grid-column: span 2 / 5;
+    padding: 20px;
+}
+
+aside,
+article {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#image-container {
+    display: flex;
+}
+
+#image-container img {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+}
+
+footer {
+    grid-row: 3;
+    grid-column: span 5;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.image {
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+#image-container img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#image-container img:hover {
+    opacity: 0.7;
+}
+
+.footer-container {
+    padding-bottom: 20px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-container a:hover {
+    background-color: yellow;
+    color: #000000;
+    padding: .5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .border-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-image-container {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
