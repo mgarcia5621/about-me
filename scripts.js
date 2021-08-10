@@ -1,3 +1,8 @@
+// Owl Carousel
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel();
+});
+
 const sideImages = [
     "house-view.png", "village-view.png", "Mateomayo.png", "me_mom_jennifer.jpg"
 ]
@@ -34,4 +39,4 @@ span.onclick = () => {
     let modal = document.getElementById('myModal')
     modal.style.display = "none";
 }   
-
+  
