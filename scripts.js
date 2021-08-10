@@ -4,7 +4,7 @@ $(document).ready(function(){
 });
 
 const sideImages = [
-    "house-view.png", "village-view.png", "Mateomayo.png", "me_mom_jennifer.jpg"
+    "house-view.png", "village-view.png", "Mateomayo.png", "me_mom_jennifer.jpg", "family.jpg"
 ]
 
 for (let i = 0; i < sideImages.length; i++) {
