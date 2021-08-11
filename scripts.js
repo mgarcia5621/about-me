@@ -1,28 +1,3 @@
-// Owl Carousel
-$('.owl-carousel').owlCarousel({
-    center: true,
-    loop: true,
-    margin: 10,
-    nav: true,
-    responsive: {
-        0: {
-            items: 1,
-            nav: true,
-            dots: true,
-        },
-        600: {
-            items: 2,
-            nav: true,
-            dots: true,
-        },
-        1000: {
-            items: 3,
-            nav: true,
-            dots: true,
-        }
-    }
-});
-
 const sideImages = [
     "house-view.png", "village-view.png", "Mateomayo.png", "me_mom_jennifer.jpg", "family.jpg"
 ]
@@ -31,7 +6,7 @@ for (let i = 0; i < sideImages.length; i++) {
     const element = sideImages[i];
 
     let imageContainer = document.getElementById('image-container')
-    imageContainer.innerHTML += `<img class="clickable-image" src="/images/${element}" alt="${element}">`
+    imageContainer.innerHTML += `<img class="clickable-image" src="/images/${element}" alt="${element.slice(0, -4)}">`
 }
 
 let selectedImage = document.querySelectorAll('.clickable-image')
