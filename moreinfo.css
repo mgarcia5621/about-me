@@ -46,7 +46,7 @@ body {
     flex-direction: column;
     border: black solid 4px;
     width: auto;
-    margin: 0 rrem;
+    margin: 0 2rem;
 }
 
 .card-text {
